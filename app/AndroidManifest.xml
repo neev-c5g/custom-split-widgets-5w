@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="kr.blackr.customsplit" android:versionCode="6" android:versionName="1.0.0">
+  <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19" />
+  <uses-permission android:name="dev.ev6.taximeter.prototype.permission.BIND_SPLIT_METER" />
+  <application android:label="분할화면 커스텀" android:allowBackup="false" android:icon="@drawable/ic_launcher" android:theme="@android:style/Theme.Holo.NoActionBar">
+    <provider android:name="kr.blackr.split.PanelConfigProvider" android:authorities="kr.blackr.customsplit.config" android:exported="true" />
+    <activity android:name="kr.blackr.split.PanelPreviewActivity" android:exported="false" />
+    <activity android:name="kr.blackr.split.AddonPreviewActivity" android:exported="false" />
+    <activity android:name="kr.blackr.split.SettingsActivity" android:label="분할화면 커스텀" android:exported="true">
+      <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+    </activity>
+  </application>
+</manifest>

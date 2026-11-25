@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="kr.blackr.customsplit.motionprobe">
+ <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19" />
+ <application android:label="Motion probe" />
+ <instrumentation android:name="dev.ev6.taximeter.prototype.MotionProbe" android:targetPackage="dev.ev6.taximeter.prototype" />
+</manifest>

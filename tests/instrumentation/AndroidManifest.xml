@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="kr.blackr.customsplit.probe">
+ <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19" />
+ <application android:label="Custom split probe" />
+ <instrumentation android:name="kr.blackr.split.probe.MeterProbe" android:targetPackage="kr.blackr.customsplit" />
+</manifest>

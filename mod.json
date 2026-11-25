@@ -1,0 +1,11 @@
+{
+  "id": "custom-split-main",
+  "name": "분할화면 커스텀",
+  "version": "1.0.0",
+  "hmgapi": ">=1.0.2",
+  "description": "순정 분할화면에 선택한 외부 앱 위젯을 표시합니다",
+  "live": true,
+  "hooks": { "jar": "hooks.jar", "entry": "kr.blackr.split.hook.StockPanelEntry", "points": {} },
+  "apps": [ { "apk": "app/CustomSplit.apk", "package": "kr.blackr.customsplit" } ],
+  "provides": { "launcher": [ { "id": "customsplit", "package": "kr.blackr.customsplit", "class": "kr.blackr.split.SettingsActivity" } ] }
+}

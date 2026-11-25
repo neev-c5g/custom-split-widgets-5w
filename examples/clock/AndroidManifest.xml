@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="example.splitclock">
+ <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19"/>
+ <application android:label="위젯 연동 예제" android:allowBackup="false">
+  <service android:name="example.splitclock.ClockWidgetService" android:exported="true" android:label="시계 예제">
+   <intent-filter><action android:name="kr.blackr.customsplit.action.WIDGET_PROVIDER"/></intent-filter>
+   <meta-data android:name="kr.blackr.customsplit.widget.ID" android:value="clock"/>
+   <meta-data android:name="kr.blackr.customsplit.widget.TITLE" android:value="시계 예제"/>
+   <meta-data android:name="kr.blackr.customsplit.widget.VERSION" android:value="1"/>
+  </service>
+ </application>
+</manifest>
